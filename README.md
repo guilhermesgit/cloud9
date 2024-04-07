@@ -21,6 +21,23 @@ module "cloud9" {
 
 }
 
+
+```
+## Utilizando o modulo público
+```bash
+module "dev" {
+  source  = "guilhermesgit/cloud9/aws"
+  version = "0.1.0"
+  
+  instance_type   = "t2.micro"
+  name            = "Dev-01"
+  image_id        = "amazonlinux-2023-x86_64"
+  Ambiente        = "Desenvolvimento"
+  connection_type = "CONNECT_SSM"
+  accountid = "111111111111"
+  accountname = "usuario-dev"
+}
+
 ```
 
 ## Requirements
@@ -48,8 +65,13 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_accountid"></a> [accountid](#input\_accountid) | AccountID | `string` | `"111111111111"` | yes |
-| <a name="input_accountname"></a> [accountname](#input\_accountname) | AccountName | `string` | `"root"` | yes |
+| <a name="input_Ambiente"></a> [Ambiente](#input\_Ambiente) | n/a | `string` | n/a | yes |
+| <a name="input_accountid"></a> [accountid](#input\_accountid) | n/a | `string` | n/a | yes |
+| <a name="input_accountname"></a> [accountname](#input\_accountname) | n/a | `string` | n/a | yes |
+| <a name="input_connection_type"></a> [connection\_type](#input\_connection\_type) | n/a | `string` | n/a | yes |
+| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | n/a | `string` | n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
