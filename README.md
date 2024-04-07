@@ -23,7 +23,7 @@ module "cloud9" {
 
 
 ```
-## Utilizando o modulo público
+## Utilizando o terraform registry
 ```bash
 module "dev" {
   source  = "guilhermesgit/cloud9/aws"
