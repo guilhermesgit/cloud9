@@ -23,8 +23,8 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_accountid"></a> [accountid](#input\_accountid) | n/a | `string` | `"111111111111"` | no |
-| <a name="input_accountname"></a> [accountname](#input\_accountname) | n/a | `string` | `"root"` | no |
+| <a name="input_accountid"></a> [accountid](#input\_accountid) | AccountID | `string` | `"111111111111"` | no |
+| <a name="input_accountname"></a> [accountname](#input\_accountname) | AccountName | `string` | `"root"` | no |
 
 ## Outputs
 
