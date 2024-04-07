@@ -7,8 +7,9 @@ O Cloud9 é um ambiente de desenvolvimento online oferecido pela Amazon Web Serv
 
 Utilizar o ambiente de desenvolvimento da AWS dentro da console.
 
-## Como utilizar
+## Como utilizar: em account id e accountname alterar dentro do diretorio vars
 
+```bash
 module "cloud9" {
   source          = "./modules/cloud9"
   instance_type   = "t2.micro"
@@ -20,7 +21,7 @@ module "cloud9" {
 
 }
 
-
+```
 
 ## Requirements
 
