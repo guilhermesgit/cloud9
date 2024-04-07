@@ -27,7 +27,7 @@ module "cloud9" {
 ```bash
 module "dev" {
   source  = "guilhermesgit/cloud9/aws"
-  version = "0.1.1"
+  version = "0.1.0"
   
   instance_type   = "t2.micro"
   name            = "Dev-01"
