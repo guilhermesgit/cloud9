@@ -1,9 +1,25 @@
 variable "accountid" {
   type = string
-  default = "111111111111"
 }
 
 variable "accountname" {
-  type =  string
-  default = "root"
+  type = string
+}
+
+variable "instance_type" {
+  type = string
+}
+
+variable "name" {
+  type = string
+}
+variable "image_id" {
+  type = string
+}
+
+variable "Ambiente" {
+  type = string
+}
+variable "connection_type" {
+  type = string
 }
