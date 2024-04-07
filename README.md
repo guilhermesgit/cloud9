@@ -65,13 +65,13 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_Ambiente"></a> [Ambiente](#input\_Ambiente) | n/a | `string` | n/a | yes |
-| <a name="input_accountid"></a> [accountid](#input\_accountid) | n/a | `string` | n/a | yes |
-| <a name="input_accountname"></a> [accountname](#input\_accountname) | n/a | `string` | n/a | yes |
-| <a name="input_connection_type"></a> [connection\_type](#input\_connection\_type) | n/a | `string` | n/a | yes |
-| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | n/a | `string` | n/a | yes |
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
+| <a name="input_Ambiente"></a> [Ambiente](#input\_Ambiente) | Adiciona o ambiente | `string` | n/a | yes |
+| <a name="input_accountid"></a> [accountid](#input\_accountid) | Id da Conta | `string` | n/a | yes |
+| <a name="input_accountname"></a> [accountname](#input\_accountname) | Nome da conta | `string` | n/a | yes |
+| <a name="input_connection_type"></a> [connection\_type](#input\_connection\_type) | Tipo de conexão | `string` | n/a | yes |
+| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | Id da imagem | `string` |n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Tipo de instância | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Nome da máquina | `string` | n/a | yes |
 
 ## Outputs
 
