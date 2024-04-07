@@ -14,7 +14,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_cloud9"></a> [cloud9](#module\_cloud9) | ./modules/cloud9 | n/a |
+| <a name="module_cloud9"></a> [cloud9](#module\_cloud9) | ./modules/cloud9 | private module |
 
 ## Resources
 
