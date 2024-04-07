@@ -1,3 +1,4 @@
+## Módulo para criação de ambiente utilizando o cloud9, SDK da AWS.
 ## Requirements
 
 | Name | Version |
