@@ -29,8 +29,10 @@ module "dev" {
   source  = "guilhermesgit/cloud9/aws"
   version = "0.1.2"
   
+  for_each = toset(["Dev", "DevOps"])
+
   instance_type   = "t2.micro"
-  name            = "Dev-01"
+  name            = "Cloud9-${each.key}"
   image_id        = "amazonlinux-2023-x86_64"
   Ambiente        = "Desenvolvimento"
   connection_type = "CONNECT_SSM"
