@@ -1,12 +1,13 @@
-## Module for environment creation using Cloud9, AWS SDK.
+## Módulo para criação de ambiente utilizando o cloud9, SDK da AWS.
 
-Cloud9 is an online development environment offered by Amazon Web Services (AWS), allowing developers to write, run, and debug code directly in a web browser. It supports multiple programming languages, integration with Git, and access to AWS resources, facilitating collaborative and agile development of cloud applications.
 
-## Features 
+O Cloud9 é um ambiente de desenvolvimento online oferecido pela Amazon Web Services (AWS), permitindo aos desenvolvedores escrever, executar e depurar código diretamente em um navegador web. Ele suporta várias linguagens de programação, integração com Git e acesso a recursos da AWS, facilitando o desenvolvimento colaborativo e ágil de aplicativos na nuvem.
 
-Deploy with Terraform using Cloud9.
+## Características 
 
-## How to use: modify the account id and account name inside the vars file.
+Utilizar o ambiente de desenvolvimento da AWS dentro da console.
+
+## Como utilizar: em account id e accountname alterar dentro do arquivo vars
 
 ```bash
 module "cloud9" {
@@ -22,7 +23,7 @@ module "cloud9" {
 
 
 ```
-## Using the Terraform registry.
+## Utilizando o terraform registry
 ```bash
 module "dev" {
   source  = "guilhermesgit/cloud9/aws"
