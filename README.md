@@ -14,7 +14,7 @@ module "cloud9" {
   instance_type   = "t2.micro"
   name            = "Dev-01"
   image_id        = "amazonlinux-2023-x86_64"
-  Ambiente        = "Desenvolvimento"
+  Ambiente        = "Development"
   connection_type = "CONNECT_SSM"
   owner_arn       = "arn:aws:iam::${var.accountid}:${var.accountname}"
 
@@ -33,10 +33,10 @@ module "dev" {
   instance_type   = "t2.micro"
   name            = "Cloud9-${each.key}"
   image_id        = "amazonlinux-2023-x86_64"
-  Ambiente        = "Desenvolvimento"
+  Ambiente        = "Production"
   connection_type = "CONNECT_SSM"
   accountid = "111111111111"
-  accountname = "usuario-dev"
+  accountname = "iamuser-name"
 }
 
 ```
@@ -66,13 +66,13 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_Ambiente"></a> [Ambiente](#input\_Ambiente) | Adiciona o ambiente | `string` | n/a | yes |
-| <a name="input_accountid"></a> [accountid](#input\_accountid) | Id da Conta | `string` | n/a | yes |
-| <a name="input_accountname"></a> [accountname](#input\_accountname) | Nome da conta | `string` | n/a | yes |
-| <a name="input_connection_type"></a> [connection\_type](#input\_connection\_type) | Tipo de conexão | `string` | n/a | yes |
-| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | Id da imagem | `string` |n/a | yes |
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Tipo de instância | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | Nome da máquina | `string` | n/a | yes |
+| <a name="input_Ambiente"></a> [Ambiente](#input\_Ambiente) | Environment | `string` | n/a | yes |
+| <a name="input_accountid"></a> [accountid](#input\_accountid) | Account ID | `string` | n/a | yes |
+| <a name="input_accountname"></a> [accountname](#input\_accountname) | Account name | `string` | n/a | yes |
+| <a name="input_connection_type"></a> [connection\_type](#input\_connection\_type) | Type of connection | `string` | n/a | yes |
+| <a name="input_image_id"></a> [image\_id](#input\_image\_id) | AMI Name | `string` |n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | Instance type | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Instance name | `string` | n/a | yes |
 
 ## Outputs
 
